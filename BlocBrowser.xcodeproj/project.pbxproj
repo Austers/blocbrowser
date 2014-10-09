@@ -13,6 +13,7 @@
 		1369144419E696DD00EEAB67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1369144319E696DD00EEAB67 /* Images.xcassets */; };
 		1369145319E696DD00EEAB67 /* BlocBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1369145219E696DD00EEAB67 /* BlocBrowserTests.m */; };
 		1369145E19E69F7300EEAB67 /* WebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1369145D19E69F7300EEAB67 /* WebBrowserViewController.m */; };
+		1369146119E6EF3C00EEAB67 /* AwesomeFloatingToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1369146019E6EF3C00EEAB67 /* AwesomeFloatingToolbar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,8 @@
 		1369145219E696DD00EEAB67 /* BlocBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocBrowserTests.m; sourceTree = "<group>"; };
 		1369145C19E69F7300EEAB67 /* WebBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebBrowserViewController.h; sourceTree = "<group>"; };
 		1369145D19E69F7300EEAB67 /* WebBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebBrowserViewController.m; sourceTree = "<group>"; };
+		1369145F19E6EF3C00EEAB67 /* AwesomeFloatingToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeFloatingToolbar.h; sourceTree = "<group>"; };
+		1369146019E6EF3C00EEAB67 /* AwesomeFloatingToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeFloatingToolbar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 				1369143B19E696DD00EEAB67 /* AppDelegate.m */,
 				1369145C19E69F7300EEAB67 /* WebBrowserViewController.h */,
 				1369145D19E69F7300EEAB67 /* WebBrowserViewController.m */,
+				1369145F19E6EF3C00EEAB67 /* AwesomeFloatingToolbar.h */,
+				1369146019E6EF3C00EEAB67 /* AwesomeFloatingToolbar.m */,
 				1369143D19E696DD00EEAB67 /* ViewController.h */,
 				1369143E19E696DD00EEAB67 /* ViewController.m */,
 				1369144319E696DD00EEAB67 /* Images.xcassets */,
@@ -218,6 +223,7 @@
 			files = (
 				1369143F19E696DD00EEAB67 /* ViewController.m in Sources */,
 				1369143C19E696DD00EEAB67 /* AppDelegate.m in Sources */,
+				1369146119E6EF3C00EEAB67 /* AwesomeFloatingToolbar.m in Sources */,
 				1369145E19E69F7300EEAB67 /* WebBrowserViewController.m in Sources */,
 				1369143919E696DD00EEAB67 /* main.m in Sources */,
 			);
