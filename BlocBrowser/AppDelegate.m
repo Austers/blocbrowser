@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "WebBrowserViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +21,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[[WebBrowserViewController alloc]init]];
     [self.window makeKeyAndVisible];
     return YES;
 }
