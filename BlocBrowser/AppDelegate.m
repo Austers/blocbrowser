@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:NSLocalizedString(@"Welcome!", @"Welcome title") message:NSLocalizedString(@"Get excited to use the best web browser ever!", @"Welcome comment") delegate:nil cancelButtonTitle:NSLocalizedString(@"OK, I'm excited!", @"Welcome button title") otherButtonTitles:nil];
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:NSLocalizedString(@"Sanity test!", @"Welcome title") message:NSLocalizedString(@"If you agree, click 'Zaki is definitely gay', to prove you are sane", @"Welcome comment") delegate:nil cancelButtonTitle:NSLocalizedString(@"Zaki is definitely gay", @"Welcome button title") otherButtonTitles:nil];
     
     [alert show];
     

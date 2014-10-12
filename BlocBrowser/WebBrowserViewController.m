@@ -101,7 +101,7 @@
     self.textField.frame = CGRectMake(0, 0, width, itemHeight);
     self.webview.frame = CGRectMake(0, CGRectGetMaxY(self.textField.frame), width, browserHeight);
 
-    self.awesomeToolbar.frame = CGRectMake(20, 100, 280, 60);
+    self.awesomeToolbar.frame = CGRectMake(20, 150, 280, 60);
 }
 
 #pragma mark - UITextFieldDelegate
@@ -173,6 +173,29 @@
     } else if ([title isEqualToString:kWebBrowserRefreshString]) {
         [self.webview reload];
     }
+}
+
+-(void) floatingToolbar:(AwesomeFloatingToolbar *)toolBar didTryToPanWithOffset:(CGPoint)offset {
+    CGPoint startingPoint = toolBar.frame.origin;
+    CGPoint newPoint = CGPointMake(startingPoint.x + offset.x, startingPoint.y + offset.y);
+    
+    CGRect potentialNewFrame = CGRectMake(newPoint.x, newPoint.y, CGRectGetWidth(toolBar.frame), CGRectGetHeight(toolBar.frame));
+    
+    if (CGRectContainsRect(self.view.bounds, potentialNewFrame)) {
+    
+        toolBar.frame = potentialNewFrame;
+    }
+    
+
+}
+
+-(void)floatingToolbar:(AwesomeFloatingToolbar *)toolBar didTrytoPinchWithResultScale:(CGFloat)scale {
+    
+    CGAffineTransform currentTransform = toolBar.transform;
+    CGAffineTransform newTransform = CGAffineTransformScale(currentTransform, scale, scale);
+    
+    toolBar.frame = CGRectApplyAffineTransform(toolBar.frame, newTransform);
+
 }
 
 #pragma mark - Miscellaneous
