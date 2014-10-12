@@ -101,7 +101,7 @@
     self.textField.frame = CGRectMake(0, 0, width, itemHeight);
     self.webview.frame = CGRectMake(0, CGRectGetMaxY(self.textField.frame), width, browserHeight);
 
-    self.awesomeToolbar.frame = CGRectMake(20, 150, 280, 60);
+    self.awesomeToolbar.frame = CGRectMake(20, 300, 280, 60);
 }
 
 #pragma mark - UITextFieldDelegate
